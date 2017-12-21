@@ -406,7 +406,7 @@ def rectangles_from_circles(circles):
     # ------------------------------------------------------------------
     sq = []
     for k in range(len(circles)):
-        sq = sq + [rg.Rectangle(rg.Point(circles[k].center.x -circles[k].radius, circles[k].center.y -circles[k].radius),
+        sq = sq + [rg.Rectangle(rg.Point(circles[k].center.x - circles[k].radius, circles[k].center.y -circles[k].radius),
                                 rg.Point(circles[k].center.x + circles[k].radius, circles[k].center.y + circles[k].radius))]
     return sq
 
