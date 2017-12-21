@@ -490,6 +490,12 @@ def run_test_fancy_polygon():
     #   For all these, filling the circles with one color and using
     #   a contrasting color for the lines makes them especially pretty.
     # ------------------------------------------------------------------
+    title = 'FANCY POLYGON tests 1 and 2:  7 blue lines, hops = 2;  5 red lines, hops = 3.'
+    window = rg.RoseWindow(520, 400, title)
+
+    circle = rg.Circle(rg.Point(200, 200), 100)
+    fancy_polygon(window, circle, 20, 9, 'navy', 3)
+    window.close_on_mouse_click()
 
 
 def fancy_polygon(window, circle, number_of_lines, hops_to_next_point, color, thickness):
@@ -550,7 +556,7 @@ def fancy_polygon(window, circle, number_of_lines, hops_to_next_point, color, th
       :type thickness:       int
     """
     # ------------------------------------------------------------------
-    # TODO: 10. Implement and test this function.
+    # Done: 10. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     # IMPLEMENTATION REQUIREMENT:
